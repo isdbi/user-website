@@ -10,28 +10,28 @@ const products = [
 		icon: <HomeIcon className="w-6 h-6 text-amber-500" />,
 		title: "building-financing",
 		description: "Shariah-compliant home purchase and refinancing solutions",
-		link: "/building",
+		link: "/upload",
 	},
 	{
 		id: "business-financing",
 		icon: <BuildingIcon className="w-6 h-6 text-amber-500" />,
 		title: "Business Financing",
 		description: "Capital and growth funding for your business",
-		link: "/business-financing",
+		link: "/upload",
 	},
 	{
 		id: "vehicle-leasing",
 		icon: <CarIcon className="w-6 h-6 text-amber-500" />,
 		title: "Vehicle Leasing",
 		description: "Ijarah-based vehicle financing options",
-		link: "/vehicle",
+		link: "/upload",
 	},
 	{
 		id: "investment-products",
 		icon: <TrendingUpIcon className="w-6 h-6 text-amber-500" />,
 		title: "Investment Products",
 		description: "Profit-sharing investment opportunities",
-		link: "/investment-products",
+		link: "/upload",
 	},
 ];
 

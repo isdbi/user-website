@@ -29,9 +29,9 @@ export default function RootLayout({
 }>) {
 	return (
 		<ViewTransitions>
-			<html lang="en" suppressHydrationWarning>
+			<html lang="en" suppressHydrationWarning className="h-full">
 				<body
-					className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+					className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-gradient-to-br from-background via-background to-muted/30 dark:from-background dark:via-background dark:to-muted/10`}
 				>
 					<ThemeProvider
 						attribute="class"
@@ -41,8 +41,10 @@ export default function RootLayout({
 					>
 						<ClerkAuthProvider>
 							<ReactQueryProvider>
-								{children}
-								<Analytics />
+								<div className="min-h-screen flex flex-col">
+									{children}
+									<Analytics />
+								</div>
 							</ReactQueryProvider>
 						</ClerkAuthProvider>
 					</ThemeProvider>
